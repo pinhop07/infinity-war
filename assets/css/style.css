@@ -1,0 +1,112 @@
+@font-face {
+	font-family: "Heros";
+	src: url(../fonts/hero.ttf) format("truetype");
+}
+/* General Elements*/
+body {
+	background-image: url("../images/background.png");
+}
+div{
+	border: solid 2px white;
+	padding: 10px;
+}
+span{
+	font-weight: bold;
+}
+ol{
+	list-style: decimal inside; 
+}
+ul {
+	list-style: disc inside;
+	text-indent: 20px;
+}
+/* Classes */
+.container{
+	padding: 0;
+	border: none;
+}
+.row {
+    display: flex;
+    border-top: none;
+}
+.row > [class*='col-'] {
+	 display: flex;
+	 flex-direction: column;
+}
+.brand-logo {
+	font-family: 'Bangers', cursive;
+	color: white;
+	margin: 0 auto;
+	font-size: 30pt;
+}
+.img-template {
+	visibility: hidden;
+	width:100%;
+	height:auto;
+}
+.numberToMatch, .winsAndLosses, .userTotal{
+	width: 100%;
+	height: 60px;
+	background: white;
+}
+.gemImage{
+	height: 80px;
+	width: 57px;
+	margin: 10px;
+	display : block;
+    margin : auto;
+}
+/* IDs */
+#game{
+	font-weight: bold;
+	text-align: center;
+	font-size: 15pt;
+}
+#thanos{
+	background-image: url("../images/thanos.png");	
+	background-size: contain;
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+#image-container {
+	background-image: url("../images/thanos.png") no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+    position: relative;
+}
+#header{
+	background-color: red;
+	text-align: center;
+	border-top: solid 2px white;
+}
+#instructions{
+	background: white;
+	font-family: "Heros", sans-serif;
+	font-size: 14px;
+}
+#score{
+	background: white;
+	font-family: "Heros", sans-serif;
+	font-size: 14px;
+}
+#gems{
+	border: none;
+}
+#space{
+	color: green;
+}
+#soul{
+	color: purple;
+}
+#reality{
+	color: orange;
+}
+#time{
+	color: blue;
+}
+#power{
+	color: #F6EF25;
+}
+#mind{
+	color: red;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- RESET CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Bangers|Permanent+Marker|PT+Sans+Narrow" rel="stylesheet">
+
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row" id="header">
+			<h1 class="brand-logo">Infinity War</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-sm-6" id="instructions">
+				<h3 id="game">Here's how you play the game</h3>
+				<br>
+				<ol>
+					<li>You will be given a random number at the start of the game. <span>"Number To Get"</span></li>
+					<li>There are six Infinity Stones.</li>
+					<ul>
+						<li id="mind">Mind</li>
+						<li id="reality">Reality</li>
+						<li id="power">Power</li>
+						<li id="space">Space</li>
+						<li id="time">Time</li>
+						<li id="soul">Soul</li>	
+					</ul>
+					<li>By clicking on a stone, you will add a specific amount of points to your total score.</li>
+					<li>You win the game by matching your total score to the random number.</li>
+					<li>You lose the game if your total score goes above the random number.</li>
+					<li>The value of each stone is hidden from you until you click on it.</li>
+					<li>Each time when the game starts, the game will change the values of each stone.</li>
+				</ol>
+			</div>
+			<div class="col-md-6 col-sm-6" id="thanos">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4" id="score">
+				<div class="numberToMatch">
+					<h2>Number To Get:
+						<span id= "randomNumber"></span>
+					</h2>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4" id="score">
+				<div class="winsAndLosses">
+					<h2>Wins:
+						<span id= "numberWins"></span>
+					</h2>
+					<h2>Losses: 
+						<span id= "numberLosses"></span>
+					</h2>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4" id="score">
+				<div class="userTotal">
+					<h2>Your total score is:
+						<span id="finalTotal"></span>
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 col-sm-2" id="gems">
+				<img src="assets/images/mind.png" class=gemImage id= "six" alt="Mind Gem">
+			</div>
+			<div class="col-md-2 col-sm-2" id="gems">
+				<img src="assets/images/reality.png" class=gemImage id= "three" alt="Reality Gem">
+			</div>
+			<div class="col-md-2 col-sm-2" id="gems">
+				<img src="assets/images/power.png" class=gemImage id= "five" alt="Power Gem">
+			</div>
+			<div class="col-md-2 col-sm-2" id="gems">
+				<img src="assets/images/space.png" class=gemImage id="one" alt="Space Gem">
+			</div>
+			<div class="col-md-2 col-sm-2" id="gems">
+				<img src="assets/images/time.png" class=gemImage id= "four" alt="Time Gem">
+			</div>
+			<div class="col-md-2 col-sm-2" id="gems">
+				<img src="assets/images/soul.png" class=gemImage id="two" alt="Soul Gem">
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+
+</body>
+</html>
